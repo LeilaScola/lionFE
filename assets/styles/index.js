@@ -20,7 +20,7 @@ export default StyleSheet.create({
 	},
 
     // SCREENS - ALL
-	background: {
+	container: {
         flex: 1, 
         alignItems: 'center', 
         justifyContent: 'center',
@@ -35,6 +35,7 @@ export default StyleSheet.create({
     },
     title: { 
         paddingBottom: 10, fontSize: 24, color: DARK_TEXT
-    }
+	},
 
 });
+

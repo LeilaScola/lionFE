@@ -4,7 +4,7 @@
     "slug": "martha",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.svg",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.svg",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
