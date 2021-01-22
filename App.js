@@ -39,8 +39,8 @@ function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="About" component={AboutStackScreen} />
-        <Tab.Screen name="Home" component={HomeStackScreen} />
+        <Tab.Screen name="About" component={AboutScreen} />
+        <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Help" component={HelpScreen} />
       </Tab.Navigator>
     </NavigationContainer>
