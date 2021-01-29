@@ -1,0 +1,26 @@
+{
+    "mobile": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-lionfe-mobile-172714-authRole",
+            "UnauthRoleArn": "arn:aws:iam::882901848297:role/amplify-lionfe-mobile-172714-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::882901848297:role/amplify-lionfe-mobile-172714-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-lionfe-mobile-172714-deployment",
+            "UnauthRoleName": "amplify-lionfe-mobile-172714-unauthRole",
+            "StackName": "amplify-lionfe-mobile-172714",
+            "StackId": "arn:aws:cloudformation:us-west-2:882901848297:stack/amplify-lionfe-mobile-172714/1fa358b0-61d1-11eb-b2a9-063fcf1052ff",
+            "AmplifyAppId": "d35j96kwrk9x0a"
+        },
+        "categories": {
+            "auth": {
+                "lionfebe04e2be": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d35j96kwrk9x0a",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}

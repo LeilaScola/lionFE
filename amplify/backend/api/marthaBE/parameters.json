@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "marthaBE",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authlionfebe04e2be",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
