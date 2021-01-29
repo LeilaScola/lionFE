@@ -4,6 +4,9 @@ const PURPLE_TEXT = "#5341AF";
 const DARK_TEXT = "#222151";
 const WHITE = "#F9F9FB";
 const OFF_WHITE = "#FFFFFF";
+const LIGHT_TEXT = "#8A89AE";
+const CONTAINER_SHADOW = "rgba(112,144,176,0.1)";
+
 
 const DIMENSION_WIDTH = Dimensions.get("window").width;
 const DIMENSION_HEIGHT = Dimensions.get("window").height;
@@ -34,7 +37,7 @@ export default StyleSheet.create({
         alignItems: 'center', 
         justifyContent: 'center',
 		resizeMode: "cover",
-		fontFamily: "Helvetica",
+		fontFamily: "Open Sans, Helvetica",
 		width: "100%",
 	},
 	top: {
@@ -61,8 +64,8 @@ export default StyleSheet.create({
 	helpButton: {
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "right",
-		alignItems: "right",
+		justifyContent: "center",
+		alignItems: "center",
 	},
 	appLogo: {
 		alignSelf: "center",
@@ -72,7 +75,6 @@ export default StyleSheet.create({
 	},
 	aboutBody: {
 		display: "flex",
-		border: "10% blue",
 		paddingTop: "5%",
 		paddingBottom: "5%",
 		paddingRight: "5%",
@@ -83,9 +85,8 @@ export default StyleSheet.create({
 		fontSize: 18,
 		width: "70%",
 		borderRadius: 10,
-		shadowColor: '#9370DB',
-		shadowOffset: { width: 0, height: 0 },
-		shadowOpacity: 0.3,
+		shadowColor: CONTAINER_SHADOW,
+		shadowOffset: { width: 0, height: 5 },
 		shadowRadius: 25,
 		elevation: 2,
 		color: DARK_TEXT,
@@ -94,7 +95,7 @@ export default StyleSheet.create({
 	//HOME SCREEN
 	homeContainer: {
 		padding: "5%",
-		fontFamily: "Helvetica",
+		fontFamily: "Open Sans, Helvetica",
 	},
 
 	homeHead: {
@@ -109,9 +110,9 @@ export default StyleSheet.create({
 
 	homeSub: {
 		paddingTop: 5,
-		fontSize: 15, 
+		fontSize: 16, 
 		fontWeight: "bold",
-		color: "#A593B2",
+		color: LIGHT_TEXT,
 	},
 
 	homeBody: {
@@ -128,9 +129,8 @@ export default StyleSheet.create({
 		fontSize: 18,
 		width: "100%",
 		borderRadius: 10,
-		shadowColor: '#9370DB',
+		shadowColor: CONTAINER_SHADOW,
 		shadowOffset: { width: 0, height: 0 },
-		shadowOpacity: 0.3,
 		shadowRadius: 25,
 		elevation: 2,
 		color: DARK_TEXT,
@@ -200,7 +200,7 @@ export default StyleSheet.create({
 		alignContent: "center",
 		justifyContent: "center",
 		height: 45,
-		fontSize: 24,
+		fontSize: 18,
 		fontWeight: "bold",
 	},
 
@@ -214,12 +214,12 @@ export default StyleSheet.create({
 		paddingBottom: 20,
 		color: "grey",
 		fontWeight: "bold",
-		fontFamily: "Helvetica",
+		fontFamily: "Open Sans, Helvetica",
 	},
 
 	textSearch: {
 		paddingLeft: 5,
-		fontFamily: "Helvetica",
+		fontFamily: "Open Sans, Helvetica",
 		color: "black",
 		backgroundColor: "white",
 		height: 40,
@@ -240,7 +240,7 @@ export default StyleSheet.create({
     submitButtonText: {
 		color: 'white',
 		fontWeight: "bold",
-		fontFamily: "Helvetica",
+		fontFamily: "Open Sans, Helvetica",
         alignSelf: "center",
         fontSize: 15,
     },

@@ -8,6 +8,7 @@ import styles from "./assets/styles";
 import HomeScreen from './src/screens/Home';
 import AboutScreen from './src/screens/About';
 import HelpScreen from './src/screens/Help';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const HomeStack = createStackNavigator();
 
@@ -37,13 +38,15 @@ const Tab = createBottomTabNavigator();
 
 function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="About" component={AboutScreen} />
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Help" component={HelpScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen name="About" component={AboutScreen} />
+          <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Help" component={HelpScreen} />
+        </Tab.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
 

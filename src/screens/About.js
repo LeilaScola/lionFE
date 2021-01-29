@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
+import { SectionList, Image,
+	TouchableOpacity, StyleSheet, Text,
+    View, Dimensions, ScrollView } from 'react-native';
 import styles from '../../assets/styles';
 
 const AboutScreen = () => (
@@ -9,7 +11,7 @@ const AboutScreen = () => (
                 <TouchableOpacity>Help</TouchableOpacity>
             </View> */}
             <Image 
-                source={require('../../assets/logo(Big).png')}
+                source={require('../../assets/logo.svg')}
                     style={styles.appLogo}/>
         </View>
         <View style={styles.aboutBody}>
