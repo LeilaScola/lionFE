@@ -19,7 +19,11 @@ const SubjectScreen = ({ navigation, route }) => {
         <View style={styles.homeBody}>
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}>
+                    <TouchableOpacity style={styles.levels}
+                        onPress={() => navigation.navigate('HomeStackScreen', { 
+                            screen: 'Topics', 
+                            params: { subject: 'Math' },
+                        })}>
                         <View style={styles.levelBody1}> </View>
                         <View style={styles.levelText}>
                             Math

@@ -2,7 +2,6 @@ import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import styles from "./assets/styles";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
@@ -14,11 +13,7 @@ const Tab = createBottomTabNavigator();
 function App() {
   return (
       <NavigationContainer>
-        <Tab.Navigator>
-          <Tab.Screen name="About" component={AboutStackScreen} />
-          <Tab.Screen name="Home" component={HomeStackScreen} />
-          <Tab.Screen name="Help" component={HelpScreen} />
-        </Tab.Navigator>
+
       </NavigationContainer>
   );
 }

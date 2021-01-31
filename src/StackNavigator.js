@@ -1,5 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
+import 'react-native-gesture-handler';
 
 import HomeScreen from './screens/Home';
 import AboutScreen from './screens/About';
@@ -19,27 +20,6 @@ const AboutStackScreen = () => {  return (
 }
 
 const HomeStackScreen = () => {  return (
-    <Stack.Navigator>
-      <Stack.Screen name="About" component={AboutScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Education" component={EducationTypeScreen} />
-      <Stack.Screen name="Help" component={HelpScreen} />
-    </Stack.Navigator>
-  );
-}
-
-const EducationStackScreen = () => {  return (
-  <Stack.Navigator>
-    <Stack.Screen name="About" component={AboutScreen} />
-    <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="Education" component={EducationTypeScreen} />
-    <Stack.Screen name="Subjects" component={SubjectTypeScreen} />
-    <Stack.Screen name="Help" component={HelpScreen} />
-  </Stack.Navigator>
-);
-}
-
-const SubjectStackScreen = () => {  return (
   <Stack.Navigator>
     <Stack.Screen name="About" component={AboutScreen} />
     <Stack.Screen name="Home" component={HomeScreen} />
@@ -51,4 +31,4 @@ const SubjectStackScreen = () => {  return (
 );
 }
 
-export { AboutStackScreen, HomeStackScreen, EducationStackScreen, SubjectStackScreen};
+export { AboutStackScreen, HomeStackScreen };
