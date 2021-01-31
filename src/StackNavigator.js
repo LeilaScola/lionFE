@@ -7,6 +7,7 @@ import AboutScreen from './screens/About';
 import HelpScreen from './screens/Help';
 import EducationTypeScreen from './screens/EducationType';
 import SubjectTypeScreen from './screens/SubjectType';
+import TopicTypeScreen from './screens/TopicType';
 
 
 const Stack = createStackNavigator();
