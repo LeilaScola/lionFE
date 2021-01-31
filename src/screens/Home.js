@@ -19,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
         <View style={styles.homeBody}>
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels} onPress={() => navigation.navigate('Subjects', { level: '1'})}>
+                    <TouchableOpacity style={styles.levels} onPress={() => navigation.navigate('Education', { level: '1'})}>
                         <View style={styles.levelBody1}> </View>
                         <View style={styles.levelText}>
                             Level 1

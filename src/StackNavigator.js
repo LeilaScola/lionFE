@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from './screens/Home';
 import AboutScreen from './screens/About';
 import HelpScreen from './screens/Help';
-import SubjectScreen from './screens/Subjects';
+import EducationScreen from './screens/Subjects';
 
 const Stack = createStackNavigator();
 
@@ -21,7 +21,7 @@ const HomeStackScreen = () => {  return (
       <Stack.Screen name="About" component={AboutScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Help" component={HelpScreen} />
-      <Stack.Screen name="Subjects" component={SubjectScreen} />
+      <Stack.Screen name="Education" component={EducationScreen} />
     </Stack.Navigator>
   );
 }
