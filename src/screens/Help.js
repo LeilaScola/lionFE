@@ -35,7 +35,8 @@ import { Linking } from 'react-native';
 //     return Linking.openURL(url);   
 // }
 
-const HelpScreen = () => (
+const HelpScreen = () => {
+    return (
     <View style={styles.homeContainer}>
         <View style={styles.homeHead}>
             <View style={styles.home}>
@@ -108,6 +109,7 @@ const HelpScreen = () => (
 
         </View>
     </View>
-);
+  );
+};
 
 export default HelpScreen;

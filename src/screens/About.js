@@ -4,7 +4,8 @@ import { SectionList, Image,
     View, Dimensions, ScrollView } from 'react-native';
 import styles from '../../assets/styles';
 
-const AboutScreen = () => (
+const AboutScreen = () => {
+    return (
     <View style={styles.container}>
         <View style={styles.aboutHead}>
             {/* <View>
@@ -44,6 +45,8 @@ const AboutScreen = () => (
             </Text>
         </View>
     </View>
-);
+  );
+};
+
 
 export default AboutScreen;

@@ -1,12 +1,21 @@
 import { StyleSheet, Dimensions } from "react-native";
+import React, {
+  PureComponent,
+} from 'react'
+import {
+  View,
+  Text,
+  Platform,
+  TouchableOpacity,
+} from 'react-native'
 
-const PURPLE_TEXT = "#5341AF";
+const DARK_PURPLE = "#5341AF";
 const DARK_TEXT = "#222151";
 const WHITE = "#F9F9FB";
 const OFF_WHITE = "#FFFFFF";
 const LIGHT_TEXT = "#8A89AE";
 const CONTAINER_SHADOW = "rgba(112,144,176,0.1)";
-
+const GREY = "#949494";
 
 const DIMENSION_WIDTH = Dimensions.get("window").width;
 const DIMENSION_HEIGHT = Dimensions.get("window").height;
@@ -33,7 +42,6 @@ export default StyleSheet.create({
 	container: {
 		display: "flex",
 		flexDirection: "column",
-        flex: 1, 
         alignItems: 'center', 
         justifyContent: 'center',
 		resizeMode: "cover",
@@ -53,6 +61,19 @@ export default StyleSheet.create({
 		fontSize: 36, 
 		color: DARK_TEXT
 	},
+	backButton: {
+		backgroundColor: DARK_PURPLE,
+        justifyContent: "center",
+        padding: "1%",
+        marginRight: "45%",
+		marginLeft: "45%",
+		fontSize: 18, 
+		color: WHITE,
+		fontWeight: "bold",
+		fontFamily: "Open Sans, Helvetica",
+        alignSelf: "center",
+	},
+
 
 	//ABOUT PAGE
 	aboutHead: {
@@ -125,10 +146,10 @@ export default StyleSheet.create({
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
-		backgroundColor: "white",
+		backgroundColor: WHITE,
 		fontSize: 18,
 		width: "100%",
-		borderRadius: 10,
+		borderRadius: 24,
 		shadowColor: CONTAINER_SHADOW,
 		shadowOffset: { width: 0, height: 0 },
 		shadowRadius: 25,
@@ -150,48 +171,48 @@ export default StyleSheet.create({
 
 	levelBody1: {
 		height: 120,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
+		borderTopLeftRadius: 24,
+		borderTopRightRadius: 24,
 		width: "100%",
 		backgroundColor: "#EF8686",
 	},
 
 	levelBody2: {
 		height: 120,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
+		borderTopLeftRadius: 24,
+		borderTopRightRadius: 24,
 		width: "100%",
 		backgroundColor: "#EBAFAF",
 	},
 
 	levelBody3: {
 		height: 120,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
+		borderTopLeftRadius: 24,
+		borderTopRightRadius: 24,
 		width: "100%",
 		backgroundColor: "#FFCC99",
 	},
 
 	levelBody4: {
 		height: 120,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
+		borderTopLeftRadius: 24,
+		borderTopRightRadius: 24,
 		width: "100%",
 		backgroundColor: "#BCE5C8",
 	},
 
 	levelBody5: {
 		height: 120,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
+		borderTopLeftRadius: 24,
+		borderTopRightRadius: 24,
 		width: "100%",
 		backgroundColor: "#B3EFDD",
 	},
 
 	levelBody6: {
 		height: 120,
-		borderTopLeftRadius: 10,
-		borderTopRightRadius: 10,
+		borderTopLeftRadius: 24,
+		borderTopRightRadius: 24,
 		width: "100%",
 		backgroundColor: "#CCCCFF",
 	},
@@ -204,6 +225,9 @@ export default StyleSheet.create({
 		fontWeight: "bold",
 	},
 
+	//SUBJECTS PAGE
+
+
 	//HELP PAGE
 	helpBody: {
 		paddingTop: 20,
@@ -212,7 +236,7 @@ export default StyleSheet.create({
 	input: {
 		paddingTop: 20,
 		paddingBottom: 20,
-		color: "grey",
+		color: GREY,
 		fontWeight: "bold",
 		fontFamily: "Open Sans, Helvetica",
 	},
@@ -221,7 +245,7 @@ export default StyleSheet.create({
 		paddingLeft: 5,
 		fontFamily: "Open Sans, Helvetica",
 		color: "black",
-		backgroundColor: "white",
+		backgroundColor: WHITE,
 		height: 40,
 		borderWidth: .5,
 		borderColor: "black",
@@ -229,8 +253,8 @@ export default StyleSheet.create({
 	},
 
 	submitButton: {
-        backgroundColor: "#442981",
-        borderRadius: 30,
+        backgroundColor: DARK_PURPLE,
+        borderRadius: 32,
         justifyContent: "center",
         padding: "1%",
         marginRight: "45%",
@@ -238,7 +262,7 @@ export default StyleSheet.create({
 	},
 	
     submitButtonText: {
-		color: 'white',
+		color: WHITE,
 		fontWeight: "bold",
 		fontFamily: "Open Sans, Helvetica",
         alignSelf: "center",
@@ -247,4 +271,3 @@ export default StyleSheet.create({
 
 
 });
-

@@ -3,26 +3,26 @@ import { Image, View, TouchableOpacity } from 'react-native'
 import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles';
 
-const HomeScreen = ({ navigation }) => {
+const SubjectScreen = ({ navigation, route }) => {
     return (
     <View style={styles.homeContainer}>
-
+      <Button style={styles.backButton} onPress={() => goBack()} title="Level of Education" />
         <View style={styles.homeHead}>
             <View style={styles.home}>
-                Home
+                Level {route.params.level}
             </View>
             <View style={styles.homeSub}>
-                Choose your level of education
+                Choose type of education
             </View>
         </View>
 
         <View style={styles.homeBody}>
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels} onPress={() => navigation.navigate('Subjects', { level: '1'})}>
+                    <TouchableOpacity style={styles.levels}>
                         <View style={styles.levelBody1}> </View>
                         <View style={styles.levelText}>
-                            Level 1
+                            General Education
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -31,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.levels}>
                         <View style={styles.levelBody2}> </View>
                         <View style={styles.levelText}>
-                            Level 2
+                            Vocational Education
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -42,7 +42,7 @@ const HomeScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.levels}>
                         <View style={styles.levelBody3}> </View>
                         <View style={styles.levelText}>
-                            Level 3
+                            Hygiene Education
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -51,7 +51,7 @@ const HomeScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.levels}>
                         <View style={styles.levelBody4}> </View>
                         <View style={styles.levelText}>
-                            Level 4
+                            Mental Health Education
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -63,23 +63,15 @@ const HomeScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.levels}>
                         <View style={styles.levelBody5}> </View>
                         <View style={styles.levelText}>
-                            Level 5
-                        </View>
-                    </TouchableOpacity>
-                </View>
-
-                <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}>
-                        <View style={styles.levelBody6}> </View>
-                        <View style={styles.levelText}>
-                            Level 6
+                            Physical Education
                         </View>
                     </TouchableOpacity>
                 </View>
             </View>
         </View>
+
     </View>
 );
 };
 
-export default HomeScreen;
+export default SubjectScreen;
