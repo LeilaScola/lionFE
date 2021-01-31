@@ -10,26 +10,28 @@ import SubjectTypeScreen from './screens/SubjectType';
 import TopicTypeScreen from './screens/TopicType';
 
 
-const Stack = createStackNavigator();
-
-const AboutStackScreen = () => {  return (
-    <Stack.Navigator>
-      <Stack.Screen name="About" component={AboutScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
+const AboutStack = createStackNavigator();
+function AboutStackScreen() {
+  return (
+    <AboutStack.Navigator>
+      <AboutStack.Screen name="About" component={AboutScreen} />
+      <AboutStack.Screen name="Home" component={HomeScreen} />
+    </AboutStack.Navigator>
   );
 }
 
-const HomeStackScreen = () => {  return (
-  <Stack.Navigator>
-    <Stack.Screen name="About" component={AboutScreen} />
-    <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="Education" component={EducationTypeScreen} />
-    <Stack.Screen name="Subjects" component={SubjectTypeScreen} />
-    <Stack.Screen name="Topics" component={TopicTypeScreen} />
-    <Stack.Screen name="Help" component={HelpScreen} />
-  </Stack.Navigator>
-);
+const HomeStack = createStackNavigator();
+function HomeStackScreen() {
+  return (  
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Home" component={HomeScreen} />
+      <HomeStack.Screen name="About" component={AboutScreen} />
+      <HomeStack.Screen name="Education" component={EducationTypeScreen} />
+      <HomeStack.Screen name="Subjects" component={SubjectTypeScreen} />
+      <HomeStack.Screen name="Topics" component={TopicTypeScreen} />
+      <HomeStack.Screen name="Help" component={HelpScreen} />
+    </HomeStack.Navigator>
+  );
 }
 
 export { AboutStackScreen, HomeStackScreen };
