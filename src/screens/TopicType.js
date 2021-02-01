@@ -8,12 +8,12 @@ const TopicScreen = ({ navigation, route }) => {
     <View style={styles.homeContainer}>
       <Button style={styles.backButton} title="Subject" />
         <View style={styles.homeHead}>
-            <View style={styles.home}>
+            <Text style={styles.home}>
                 {route.params.subject}
-            </View>
-            <View style={styles.homeSub}>
+            </Text>
+            <Text style={styles.homeSub}>
                 Choose a Topic
-            </View>
+            </Text>
         </View>
     </View>
 );

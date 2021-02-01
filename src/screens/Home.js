@@ -8,12 +8,12 @@ const HomeScreen = ({ navigation }) => {
     <View style={styles.homeContainer}>
 
         <View style={styles.homeHead}>
-            <View style={styles.home}>
+            <Text style={styles.home}>
                 Home
-            </View>
-            <View style={styles.homeSub}>
+            </Text>
+            <Text style={styles.homeSub}>
                 Choose your level of education
-            </View>
+            </Text>
         </View>
 
         <View style={styles.homeBody}>
@@ -23,10 +23,10 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('Education', { 
                         params: { level: '1' },
                     })}>
-                        <View style={styles.levelBody1}> </View>
-                        <View style={styles.levelText}>
+                        <View style={styles.levelBody1}></View>
+                        <Text style={styles.levelText}>
                             Level 1
-                        </View>
+                        </Text>
                     </TouchableOpacity>
                 </View>
 
@@ -35,10 +35,10 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('Education', { 
                         params: { level: '2' },
                     })}>
-                        <View style={styles.levelBody2}> </View>
-                        <View style={styles.levelText}>
+                        <View style={styles.levelBody2}></View>
+                        <Text style={styles.levelText}>
                             Level 2
-                        </View>
+                        </Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -49,10 +49,10 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('Education', { 
                         params: { level: '3' },
                     })}>
-                        <View style={styles.levelBody3}> </View>
-                        <View style={styles.levelText}>
+                        <View style={styles.levelBody3}></View>
+                        <Text style={styles.levelText}>
                             Level 3
-                        </View>
+                        </Text>
                     </TouchableOpacity>
                 </View>
 
@@ -61,10 +61,10 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('Education', { 
                         params: { level: '4' },
                     })}>
-                        <View style={styles.levelBody4}> </View>
-                        <View style={styles.levelText}>
+                        <View style={styles.levelBody4}></View>
+                        <Text style={styles.levelText}>
                             Level 4
-                        </View>
+                        </Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,10 +76,10 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('Education', { 
                         params: { level: '5' },
                     })}>
-                        <View style={styles.levelBody5}> </View>
-                        <View style={styles.levelText}>
+                        <View style={styles.levelBody5}></View>
+                        <Text style={styles.levelText}>
                             Level 5
-                        </View>
+                        </Text>
                     </TouchableOpacity>
                 </View>
 
@@ -88,10 +88,10 @@ const HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('Education', { 
                         params: { level: '6' },
                     })}>
-                        <View style={styles.levelBody6}> </View>
-                        <View style={styles.levelText}>
+                        <View style={styles.levelBody6}></View>
+                        <Text style={styles.levelText}>
                             Level 6
-                        </View>
+                        </Text>
                     </TouchableOpacity>
                 </View>
             </View>
