@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Image, View, TouchableOpacity } from 'react-native'
 import { StyleSheet, Text } from 'react-native';
-import styles from '../../assets/styles';
+import styles from '../../assets/styles/index.js';
 
-function HomeScreen ({ navigation }) {
+const HomeScreen = ({ navigation }) => {
     return (
     <View style={styles.homeContainer}>
 
@@ -20,10 +20,9 @@ function HomeScreen ({ navigation }) {
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('HomeStackScreen', { 
-                            screen: 'Education', 
-                            params: { level: '1' },
-                        })}>
+                        onPress={() => navigation.navigate('Education', { 
+                        params: { level: '1' },
+                    })}>
                         <View style={styles.levelBody1}> </View>
                         <View style={styles.levelText}>
                             Level 1
@@ -32,11 +31,10 @@ function HomeScreen ({ navigation }) {
                 </View>
 
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}
-                        onPress={() => navigation.navigate('HomeStackScreen', { 
-                            screen: 'Education', 
-                            params: { level: '2' },
-                        })}>
+                <TouchableOpacity style={styles.levels} 
+                        onPress={() => navigation.navigate('Education', { 
+                        params: { level: '2' },
+                    })}>
                         <View style={styles.levelBody2}> </View>
                         <View style={styles.levelText}>
                             Level 2
@@ -47,11 +45,10 @@ function HomeScreen ({ navigation }) {
 
             <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}
-                        onPress={() => navigation.navigate('HomeStackScreen', { 
-                            screen: 'Education', 
-                            params: { level: '3' },
-                        })}>
+                    <TouchableOpacity style={styles.levels} 
+                        onPress={() => navigation.navigate('Education', { 
+                        params: { level: '3' },
+                    })}>
                         <View style={styles.levelBody3}> </View>
                         <View style={styles.levelText}>
                             Level 3
@@ -60,11 +57,10 @@ function HomeScreen ({ navigation }) {
                 </View>
 
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}
-                        onPress={() => navigation.navigate('HomeStackScreen', { 
-                            screen: 'Education', 
-                            params: { level: '4' },
-                        })}>
+                    <TouchableOpacity style={styles.levels} 
+                        onPress={() => navigation.navigate('Education', { 
+                        params: { level: '4' },
+                    })}>
                         <View style={styles.levelBody4}> </View>
                         <View style={styles.levelText}>
                             Level 4
@@ -76,11 +72,10 @@ function HomeScreen ({ navigation }) {
 
             <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}
-                        onPress={() => navigation.navigate('HomeStackScreen', { 
-                            screen: 'Education', 
-                            params: { level: '5' },
-                        })}>
+                    <TouchableOpacity style={styles.levels} 
+                        onPress={() => navigation.navigate('Education', { 
+                        params: { level: '5' },
+                    })}>
                         <View style={styles.levelBody5}> </View>
                         <View style={styles.levelText}>
                             Level 5
@@ -89,11 +84,10 @@ function HomeScreen ({ navigation }) {
                 </View>
 
                 <View style={styles.levelButton}>
-                    <TouchableOpacity style={styles.levels}
-                        onPress={() => navigation.navigate('HomeStackScreen', { 
-                            screen: 'Education', 
-                            params: { level: '6' },
-                        })}>
+                    <TouchableOpacity style={styles.levels} 
+                        onPress={() => navigation.navigate('Education', { 
+                        params: { level: '6' },
+                    })}>
                         <View style={styles.levelBody6}> </View>
                         <View style={styles.levelText}>
                             Level 6

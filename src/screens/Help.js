@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Image, View, TouchableOpacity } from 'react-native'
 import { StyleSheet, Text, Picker } from 'react-native';
-import styles from '../../assets/styles';
+import styles from '../../assets/styles/index.js';
 import { ScrollView, Alert, Buttons} from 'react-native';
 import { TextInput } from 'react-native'
 import qs from 'qs';

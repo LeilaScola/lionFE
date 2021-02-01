@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { SectionList, Image,
 	TouchableOpacity, StyleSheet, Text,
     View, Dimensions, ScrollView } from 'react-native';
-import styles from '../../assets/styles';
+import styles from '../../assets/styles/index.js';
 
 function AboutScreen () {
     return (

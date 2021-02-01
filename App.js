@@ -5,21 +5,20 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { AboutStackScreen, HomeStackScreen } from './src/StackNavigator'
+import { AboutStackScreen, HomeStackScreen } from './src/StackNavigator';
 import HelpScreen from './src/screens/Help';
+import HomeScreen from './src/screens/Home';
+import AboutScreen from './src/screens/About';
+import BottomTabNavigator from './src/TabNavigator';
 
-const Tab = createBottomTabNavigator();
+// const Tab = createBottomTabNavigator();
 
-function App() {
+const App = () => {
   return (
-      <NavigationContainer>
-        <Tab.Navigator>
-            <Tab.Screen name="About" component={AboutStackScreen} />
-            <Tab.Screen name="Home" component={HomeStackScreen} />
-            <Tab.Screen name="Help" component={HelpScreen} />
-        </Tab.Navigator>
-      </NavigationContainer>
+    <NavigationContainer>
+      <BottomTabNavigator />
+    </NavigationContainer>
   );
-}
+};
 
 export default App;
