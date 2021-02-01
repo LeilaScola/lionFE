@@ -20,9 +20,7 @@ const SubjectScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Topics', { 
-                        params: { subject: 'Math' },
-                    })}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Math"})}>
                         <View style={styles.levelBody1}></View>
                         <Text style={styles.levelText}>
                             Math
@@ -32,9 +30,7 @@ const SubjectScreen = ({ navigation, route }) => {
 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Topics', { 
-                        params: { subject: 'Biology' },
-                    })}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Biology"})}>
                         <View style={styles.levelBody2}></View>
                         <Text style={styles.levelText}>
                             Biology
@@ -46,9 +42,7 @@ const SubjectScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Topics', { 
-                        params: { subject: 'Physics' },
-                    })}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Physics"})}>
                         <View style={styles.levelBody3}></View>
                         <Text style={styles.levelText}>
                             Physics
@@ -58,9 +52,7 @@ const SubjectScreen = ({ navigation, route }) => {
 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Topics', { 
-                        params: { subject: 'Geology' },
-                    })}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Geology"})}>
                         <View style={styles.levelBody4}></View>
                         <Text style={styles.levelText}>
                             Geology
@@ -73,9 +65,7 @@ const SubjectScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Topics', { 
-                        params: { subject: 'Chemistry' },
-                    })}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Chemistry"})}>
                         <View style={styles.levelBody5}></View>
                         <Text style={styles.levelText}>
                             Chemistry

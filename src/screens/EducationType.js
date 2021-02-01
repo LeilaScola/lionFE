@@ -4,6 +4,7 @@ import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles/index.js';
 
 const EducationScreen = ({ navigation, route }) => {
+    const { level } = route.params;
     return (
     <View style={styles.homeContainer}>
       <Button style={styles.backButton} title="Level of Education" />
@@ -20,9 +21,7 @@ const EducationScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Subjects', { 
-                        params: { education: 'General' },
-                    })}>
+                        onPress={() => navigation.navigate("Subjects",  {education: "General"})}>
                         <View style={styles.levelBody1}></View>
                         <Text style={styles.levelText}>
                             General Education
@@ -32,9 +31,7 @@ const EducationScreen = ({ navigation, route }) => {
 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Subjects', { 
-                        params: { education: 'Vocational' },
-                    })}>
+                        onPress={() => navigation.navigate("Subjects",  {education: "Vocational"})}>
                         <View style={styles.levelBody2}></View>
                         <Text style={styles.levelText}>
                             Vocational Education
@@ -46,9 +43,7 @@ const EducationScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Subjects', { 
-                        params: { education: 'Hygiene' },
-                    })}>
+                        onPress={() => navigation.navigate("Subjects",  {education: "Hygiene"})}>
                         <View style={styles.levelBody3}></View>
                         <Text style={styles.levelText}>
                             Hygiene Education
@@ -58,9 +53,7 @@ const EducationScreen = ({ navigation, route }) => {
 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Subjects', { 
-                        params: { education: 'Mental Health' },
-                    })}>
+                        onPress={() => navigation.navigate("Subjects",  {education: "Mental Health"})}>
                         <View style={styles.levelBody4}></View>
                         <Text style={styles.levelText}>
                             Mental Health Education
@@ -73,9 +66,7 @@ const EducationScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate('Subjects', { 
-                        params: { education: 'Physical' },
-                    })}>
+                        onPress={() => navigation.navigate("Subjects",  {education: "Physical"})}>
                         <View style={styles.levelBody5}></View>
                         <Text style={styles.levelText}>
                             Physical Education
