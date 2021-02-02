@@ -53,21 +53,24 @@ export default StyleSheet.create({
 		marginHorizontal: 10,
 		flexDirection: "row",
 		justifyContent: "space-between",
-		alignItems: "center"
+		alignItems: "center",
     },
     title: { 
 		paddingBottom: 25, 
 		fontWeight: "bold",
 		fontSize: 36, 
-		color: DARK_TEXT
+		color: DARK_TEXT,
 	},
 	backButton: {
-		marginLeft: "45%",
-		fontSize: 18, 
-		color: WHITE,
+		justifyContent: "space-between",
+		width: "50%",
+	},
+	
+	backButtonText: {
+		color: DARK_PURPLE,
+		fontSize: 24,
 		fontWeight: "bold",
-		fontFamily: "Open Sans, Helvetica",
-    alignSelf: "center",
+		paddingBottom: 40,
 	},
 
 
