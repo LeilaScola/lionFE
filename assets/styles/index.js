@@ -62,16 +62,12 @@ export default StyleSheet.create({
 		color: DARK_TEXT
 	},
 	backButton: {
-		backgroundColor: DARK_PURPLE,
-        justifyContent: "center",
-        padding: "1%",
-        marginRight: "45%",
 		marginLeft: "45%",
 		fontSize: 18, 
 		color: WHITE,
 		fontWeight: "bold",
 		fontFamily: "Open Sans, Helvetica",
-        alignSelf: "center",
+    alignSelf: "center",
 	},
 
 
@@ -82,17 +78,17 @@ export default StyleSheet.create({
 		paddingTop: 20,
 		paddingBottom: "5%",
 	},
-	helpButton: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: "center",
-	},
 	appLogo: {
 		alignSelf: "center",
     	height: 125,
     	width: 125,
     	marginTop: "5%",
+	},
+  aboutContainer: {
+    display: "flex",
+		padding: "5%",
+		fontFamily: "Open Sans, Helvetica",
+    width: "100%",
 	},
 	aboutBody: {
 		display: "flex",
@@ -101,10 +97,12 @@ export default StyleSheet.create({
 		paddingRight: "5%",
 		paddingLeft: "5%",
 		justifyContent: "center",
-		alignItems: "center",
+    alignContent: "center",
+    alignItems: "center",
+    alignSelf: "center",
 		backgroundColor: "white",
 		fontSize: 18,
-		width: "70%",
+		width: "80%",
 		borderRadius: 10,
 		shadowColor: CONTAINER_SHADOW,
 		shadowOffset: { width: 0, height: 5 },
@@ -112,6 +110,13 @@ export default StyleSheet.create({
 		elevation: 2,
 		color: DARK_TEXT,
 	},
+  aboutTitle: {
+    paddingBottom: 25, 
+		fontWeight: "bold",
+		fontSize: 36, 
+		color: DARK_TEXT,
+    alignSelf: "center",
+  },
 
 	//HOME SCREEN
 	homeContainer: {
@@ -138,7 +143,7 @@ export default StyleSheet.create({
 
 	homeBody: {
 		display: "flex",
-		justifyContent: "space-evenly",
+		// justifyContent: "space-evenly",
 	},
 
 	levels: {
@@ -149,24 +154,28 @@ export default StyleSheet.create({
 		backgroundColor: WHITE,
 		fontSize: 18,
 		width: "100%",
+    minHeight: "100%",
 		borderRadius: 24,
 		shadowColor: CONTAINER_SHADOW,
-		shadowOffset: { width: 0, height: 0 },
+		shadowOffset: { width: 0, height: 2 },
 		shadowRadius: 25,
 		elevation: 2,
 		color: DARK_TEXT,
 	},
 
 	levelRow: {
-		display: "flex",
-		flexDirection: "row",
+		display: "flex", 
+    flexFlow: "row nowrap",
+    alignItems: "flex-start",
+    // justifyContent: "space-between",
 	},
 
 	levelButton: {
 		paddingTop: 20,
 		paddingBottom: 20,
 		paddingRight: 40,
-		width: "30%",
+		width: "40%",
+    minHeight: "100%",
 	},
 
 	levelBody1: {
@@ -218,11 +227,11 @@ export default StyleSheet.create({
 	},
 
 	levelText: {
-		alignContent: "center",
-		justifyContent: "center",
-		height: 45,
+    height: 35,
 		fontSize: 18,
 		fontWeight: "bold",
+    padding: 5,
+    alignSelf: 'center'
 	},
 
 	//SUBJECTS PAGE
@@ -251,7 +260,12 @@ export default StyleSheet.create({
 		borderColor: "black",
 		borderRadius: 10,
 	},
-
+	helpButton: {
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "center",
+		alignItems: "center",
+	},
 	submitButton: {
         backgroundColor: DARK_PURPLE,
         borderRadius: 32,
