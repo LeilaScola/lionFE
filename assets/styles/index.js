@@ -154,7 +154,7 @@ export default StyleSheet.create({
 		backgroundColor: WHITE,
 		fontSize: 18,
 		width: "100%",
-    minHeight: "100%",
+    	minHeight: "100%",
 		borderRadius: 24,
 		shadowColor: CONTAINER_SHADOW,
 		shadowOffset: { width: 0, height: 2 },
@@ -165,8 +165,8 @@ export default StyleSheet.create({
 
 	levelRow: {
 		display: "flex", 
-    flexFlow: "row nowrap",
-    alignItems: "flex-start",
+    	flexFlow: "row nowrap",
+    	alignItems: "flex-start",
     // justifyContent: "space-between",
 	},
 
@@ -175,7 +175,9 @@ export default StyleSheet.create({
 		paddingBottom: 20,
 		paddingRight: 40,
 		width: "40%",
-    minHeight: "100%",
+		minHeight: "100%",
+		flexGrow: 1,
+        flex: 1,
 	},
 
 	levelBody1: {
@@ -227,11 +229,13 @@ export default StyleSheet.create({
 	},
 
 	levelText: {
-    height: 35,
+    	height: 35,
 		fontSize: 18,
 		fontWeight: "bold",
-    padding: 5,
-    alignSelf: 'center'
+    	padding: 5,
+		alignSelf: 'center',
+		flexGrow: 1,
+		flex: 1,
 	},
 
 	//SUBJECTS PAGE
