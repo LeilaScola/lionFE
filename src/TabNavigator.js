@@ -1,10 +1,10 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeStackScreen, AboutStackScreen } from "./StackNavigator";
-import icons from '../../assets/icons';
-import HelpScreen from '/screens/Help';
+import { HomeStackScreen, AboutStackScreen, HelpStackScreen } from "./StackNavigator";
+import HelpScreen from './screens/Help';
 
 const Tab = createBottomTabNavigator();
+
 const BottomTabNavigator = () => {
   return (
     <Tab.Navigator>

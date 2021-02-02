@@ -16,9 +16,21 @@ function AboutStackScreen() {
     <AboutStack.Navigator>
       <AboutStack.Screen name="About" component={AboutScreen} />
       <AboutStack.Screen name="Home" component={HomeScreen} />
+      <AboutStack.Screen name="Help" component={HelpScreen} />
     </AboutStack.Navigator>
   );
 }
+
+// const HelpStack = createStackNavigator();
+// function HelpStackScreen() {
+//   return (
+//     <HelpStack.Navigator>
+//       <HelpStack.Screen name="About" component={AboutScreen} />
+//       <HelpStack.Screen name="Home" component={HomeScreen} />
+//       <HelpStack.Screen name="Help" component={HelpScreen} />
+//     </HelpStack.Navigator>
+//   );
+// }
 
 const HomeStack = createStackNavigator();
 function HomeStackScreen() {
