@@ -6,7 +6,7 @@ import styles from '../../assets/styles/index.js';
 
 function AboutScreen () {
     return (
-    <View style={styles.container}>
+    <ScrollView style={styles.aboutContainer}>
         <View style={styles.aboutHead}>
             {/* <View>
                 <TouchableOpacity>Help</TouchableOpacity>
@@ -16,7 +16,7 @@ function AboutScreen () {
                     style={styles.appLogo}/>
         </View>
         <View style={styles.aboutBody}>
-            <Text style={styles.title}>
+            <Text style={styles.aboutTitle}>
                 About Martha
             </Text>
             <Text>
@@ -44,9 +44,9 @@ function AboutScreen () {
                 nisi ante, congue ac varius at, suscipit eu elit.
             </Text>
         </View>
-    </View>
+    </ScrollView>
   );
-};
+}
 
 
 export default AboutScreen;

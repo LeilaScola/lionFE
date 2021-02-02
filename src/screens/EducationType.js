@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Image, View, TouchableOpacity, Button } from 'react-native'
+import { Image, View, TouchableOpacity, Button, ScrollView } from 'react-native'
 import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles/index.js';
 
 const EducationScreen = ({ navigation, route }) => {
-    const { level } = route.params;
     return (
-    <View style={styles.homeContainer}>
+    <ScrollView style={styles.homeContainer}>
       <Button style={styles.backButton} title="Level of Education" />
         <View style={styles.homeHead}>
             <Text style={styles.home}>
@@ -76,7 +75,7 @@ const EducationScreen = ({ navigation, route }) => {
             </View>
         </View>
 
-    </View>
+    </ScrollView>
 );
 };
 
