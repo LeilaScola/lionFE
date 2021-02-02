@@ -232,7 +232,7 @@ export default StyleSheet.create({
     	height: 35,
 		fontSize: 18,
 		fontWeight: "bold",
-    	padding: 5,
+    	margin: 15,
 		alignSelf: 'center',
 		flexGrow: 1,
 		flex: 1,
