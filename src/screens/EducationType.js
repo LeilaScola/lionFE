@@ -6,7 +6,11 @@ import styles from '../../assets/styles/index.js';
 const EducationScreen = ({ navigation, route }) => {
     return (
     <ScrollView style={styles.homeContainer}>
-      <Button style={styles.backButton} title="Level of Education" />
+        <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate("Home")}>
+            <Text style={styles.backButtonText}>
+                Level of Education
+            </Text>        
+        </TouchableOpacity>
         <View style={styles.homeHead}>
             <Text style={styles.home}>
                 Level {route.params.level}

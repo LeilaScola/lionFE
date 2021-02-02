@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Image, View, TouchableOpacity } from 'react-native'
+import { Image, View, TouchableOpacity, ScrollView } from 'react-native'
 import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles/index.js';
 
 const HomeScreen = ({ navigation }) => {
     return (
-    <View style={styles.homeContainer}>
+    <ScrollView style={styles.homeContainer}>
 
         <View style={styles.homeHead}>
             <Text style={styles.home}>
@@ -84,7 +84,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
             </View>
         </View>
-    </View>
+    </ScrollView>
 );
 };
 

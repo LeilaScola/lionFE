@@ -6,7 +6,11 @@ import styles from '../../assets/styles/index.js';
 const TopicScreen = ({ navigation, route }) => {
     return (
     <View style={styles.homeContainer}>
-      <Button style={styles.backButton} title="Subject" />
+        <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate("Subjects")}>
+            <Text style={styles.backButtonText}>
+                Subject
+            </Text>        
+        </TouchableOpacity>        
         <View style={styles.homeHead}>
             <Text style={styles.home}>
                 {route.params.subject}

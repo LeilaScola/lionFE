@@ -5,8 +5,12 @@ import styles from '../../assets/styles/index.js';
 
 const SubjectScreen = ({ navigation, route }) => {
     return (
-    <View style={styles.homeContainer}>
-      <Button style={styles.backButton} title="Type of Education" />
+    <ScrollView style={styles.homeContainer}>
+        <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate("Education")}>
+            <Text style={styles.backButtonText}>
+                Type of Education
+            </Text>        
+        </TouchableOpacity>        
         <View style={styles.homeHead}>
             <Text style={styles.home}>
                 {route.params.education} Education
@@ -75,7 +79,7 @@ const SubjectScreen = ({ navigation, route }) => {
             </View>
         </View>
 
-    </View>
+    </ScrollView>
 );
 };
 
