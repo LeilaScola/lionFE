@@ -3,7 +3,7 @@ import { SectionList, Image,
 	TouchableOpacity, StyleSheet, Text,
     View, Dimensions, ScrollView, Animated, Keyboard } from 'react-native';
 import styles from '../../assets/styles/index.js';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+// import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 function AboutScreen () {
     return (
