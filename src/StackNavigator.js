@@ -8,6 +8,8 @@ import HelpScreen from './screens/Help';
 import EducationTypeScreen from './screens/EducationType';
 import SubjectTypeScreen from './screens/SubjectType';
 import TopicTypeScreen from './screens/TopicType';
+import PdfScreen from './screens/pdf';
+
 
 // const AboutStack = createStackNavigator();
 // function AboutStackScreen() {
@@ -40,6 +42,7 @@ function HomeStackScreen() {
       <HomeStack.Screen name="Education" component={EducationTypeScreen} />
       <HomeStack.Screen name="Subjects" component={SubjectTypeScreen} />
       <HomeStack.Screen name="Topics" component={TopicTypeScreen} />
+      <HomeStack.Screen name="Pdf" component={PdfScreen} />
       <HomeStack.Screen name="Help" component={HelpScreen} />
     </HomeStack.Navigator>
   );

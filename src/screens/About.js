@@ -13,7 +13,7 @@ function AboutScreen () {
                 <TouchableOpacity>Help</TouchableOpacity>
             </View> */}
             <Image 
-                source={require('../../assets/logo.svg')}
+                source={require('../../assets/logo(Big).png')}
                     style={styles.appLogo}/>
         </View>
         <View style={styles.aboutBody}>
@@ -24,7 +24,6 @@ function AboutScreen () {
             We believe education should be free and highly accessible. Since we have the means to provide to
             others, it is our duty as global citizens to push this mission forward. MARTHA is an affordable, sustainable, easy-to-use educational tool that can be
             utilized offline. 
-            {"\n"}{"\n"}
             </Text>
         </View>
     </ScrollView>

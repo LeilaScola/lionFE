@@ -4,7 +4,6 @@ import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles/index.js';
 import { ScrollView, Alert, Buttons} from 'react-native';
 import { TextInput } from 'react-native'
-import qs from 'qs';
 import { Linking } from 'react-native';
 
 const HelpScreen = () => {
@@ -32,7 +31,6 @@ const HelpScreen = () => {
                     </View>
                     <TextInput style = {styles.textSearch}
                         underlineColorAndroid = "transparent"
-                        placeholder = "Name..."
                         placeholderTextColor = "grey"
                     />
                 </View>
@@ -43,7 +41,6 @@ const HelpScreen = () => {
                     </View>
                     <TextInput style = {styles.textSearch}
                         underlineColorAndroid = "transparent"
-                        placeholder = "Name..."
                         placeholderTextColor = "grey"
                     />
                 </View>
@@ -69,7 +66,6 @@ const HelpScreen = () => {
                     </View>
                     <TextInput style = {styles.textSearch}
                         underlineColorAndroid = "transparent"
-                        placeholder = "Name..."
                         placeholderTextColor = "grey"
                     />
                 </View>
@@ -77,7 +73,7 @@ const HelpScreen = () => {
 
                 <TouchableOpacity  
                     style = {styles.submitButton}
-                    onPress = {() => this.sendEmail('sensibleappteam@gmail.com','Sensible App Comment')}>
+                    onPress = {() => this.sendEmail('sensibleappteam@gmail.com','MARTHA')}>
                     <Text style = {styles.submitButtonText}>Submit</Text>
                 </TouchableOpacity>
             </View>

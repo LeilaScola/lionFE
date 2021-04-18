@@ -19,6 +19,18 @@ const TopicScreen = ({ navigation, route }) => {
                 Choose a Topic
             </Text>
         </View>
+        <View style={styles.homeBody}>
+          <View style={styles.levelRow}> 
+            <View style={styles.topicButton}>
+              <TouchableOpacity style={styles.topics} 
+                onPress={() => navigation.navigate("pdf")}>
+                        <Text style={styles.levelText}>
+                            Emotional Health and Wellness
+                        </Text>
+                    </TouchableOpacity>
+            </View>
+          </View>
+      </View>
     </View>
 );
 };

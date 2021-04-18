@@ -24,10 +24,10 @@ const SubjectScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate("Topics",  {subject: "Mental Health and Wellness"})}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Wellness"})}>
                         <View style={styles.levelBody1}></View>
                         <Text style={styles.levelText}>
-                            Mental Health and Wellness
+                            Wellness
                         </Text>
                     </TouchableOpacity>
                 </View>
