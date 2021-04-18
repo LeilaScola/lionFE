@@ -1,51 +1,26 @@
 import React, { Component } from 'react'
 import { Image, View, TouchableOpacity } from 'react-native'
-import { StyleSheet, Text, Picker } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles/index.js';
 import { ScrollView, Alert, Buttons} from 'react-native';
 import { TextInput } from 'react-native'
 import qs from 'qs';
 import { Linking } from 'react-native';
 
-
-// sendEmail = async(to, subject, body, options = {}) => {
-//     const { cc, bcc } = options;
-
-//     let url = `mailto:${to}`;
-
-//     // Create email link query
-//     const query = qs.stringify({
-//         subject: subject,
-//         body: body,
-//         cc: cc,
-//         bcc: bcc
-//     });
-
-//     if (query.length) {
-//         url += `?${query}`;
-//     }
-
-//     // check if we can use this link
-//     const canOpen = await Linking.canOpenURL(url);
-
-//     if (!canOpen) {
-//         throw new Error('Provided URL can not be handled');
-//     }
-
-//     return Linking.openURL(url);   
-// }
-
 const HelpScreen = () => {
     return (
     <View style={styles.homeContainer}>
         <View style={styles.homeHead}>
-            <View style={styles.home}>
+            <View>
+                <Text style={styles.home}>
                 Help
+                </Text>
             </View>
-            <View style={styles.homeSub}>
+            <View>
+                <Text  style={styles.homeSub}>
                 Let us know if you have any questions,
-                {"\n"}{"\n"}
                 comments, or concerns
+                </Text>
             </View>
         </View>
 
@@ -53,7 +28,7 @@ const HelpScreen = () => {
             <View>
                 <View style={styles.input}>
                     <View>
-                        First Name
+                        <Text>First Name</Text>
                     </View>
                     <TextInput style = {styles.textSearch}
                         underlineColorAndroid = "transparent"
@@ -64,7 +39,7 @@ const HelpScreen = () => {
 
                 <View style={styles.input}>
                     <View>
-                        Last Name
+                        <Text>Last Name</Text>
                     </View>
                     <TextInput style = {styles.textSearch}
                         underlineColorAndroid = "transparent"
@@ -90,7 +65,7 @@ const HelpScreen = () => {
 
                 <View style={styles.input}>
                     <View>
-                        Message
+                    <Text>Message</Text>
                     </View>
                     <TextInput style = {styles.textSearch}
                         underlineColorAndroid = "transparent"

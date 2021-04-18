@@ -1,9 +1,7 @@
 {
   "expo": {
     "name": "martha",
-    "expo": {
-      "platforms": ["web"]
-    },
+    "platforms": ["web", "android", "ios"],
     "slug": "martha",
     "version": "1.0.0",
     "orientation": "portrait",

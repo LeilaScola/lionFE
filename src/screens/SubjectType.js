@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, View, TouchableOpacity, Button } from 'react-native'
+import { Image, View, ScrollView, TouchableOpacity, Button } from 'react-native'
 import { StyleSheet, Text } from 'react-native';
 import styles from '../../assets/styles/index.js';
 
@@ -24,26 +24,26 @@ const SubjectScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate("Topics",  {subject: "Math"})}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Mental Health and Wellness"})}>
                         <View style={styles.levelBody1}></View>
                         <Text style={styles.levelText}>
-                            Math
+                            Mental Health and Wellness
                         </Text>
                     </TouchableOpacity>
                 </View>
 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate("Topics",  {subject: "Biology"})}>
+                        onPress={() => navigation.navigate("Topics",  {subject: "Physical Health"})}>
                         <View style={styles.levelBody2}></View>
                         <Text style={styles.levelText}>
-                            Biology
+                            Physical Health
                         </Text>
                     </TouchableOpacity>
                 </View>
             </View>
 
-            <View style={styles.levelRow}>
+            {/* <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
                         onPress={() => navigation.navigate("Topics",  {subject: "Physics"})}>
@@ -76,7 +76,7 @@ const SubjectScreen = ({ navigation, route }) => {
                         </Text>
                     </TouchableOpacity>
                 </View>
-            </View>
+            </View> */}
         </View>
 
     </ScrollView>

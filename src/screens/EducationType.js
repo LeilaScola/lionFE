@@ -24,15 +24,15 @@ const EducationScreen = ({ navigation, route }) => {
             <View style={styles.levelRow}> 
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
-                        onPress={() => navigation.navigate("Subjects",  {education: "General"})}>
+                        onPress={() => navigation.navigate("Subjects",  {education: "Health"})}>
                         <View style={styles.levelBody1}></View>
                         <Text style={styles.levelText}>
-                            General Education
+                            Health Education
                         </Text>
                     </TouchableOpacity>
                 </View>
 
-                <View style={styles.levelButton}>
+                {/* <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
                         onPress={() => navigation.navigate("Subjects",  {education: "Vocational"})}>
                         <View style={styles.levelBody2}></View>
@@ -40,10 +40,10 @@ const EducationScreen = ({ navigation, route }) => {
                             Vocational Education
                         </Text>
                     </TouchableOpacity>
-                </View>
+                </View> */}
             </View>
 
-            <View style={styles.levelRow}>
+            {/* <View style={styles.levelRow}>
                 <View style={styles.levelButton}>
                     <TouchableOpacity style={styles.levels} 
                         onPress={() => navigation.navigate("Subjects",  {education: "Hygiene"})}>
@@ -76,7 +76,7 @@ const EducationScreen = ({ navigation, route }) => {
                         </Text>
                     </TouchableOpacity>
                 </View>
-            </View>
+            </View> */}
         </View>
 
     </ScrollView>

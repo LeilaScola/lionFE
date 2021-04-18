@@ -45,7 +45,7 @@ export default StyleSheet.create({
         alignItems: 'center', 
         justifyContent: 'center',
 		resizeMode: "cover",
-		fontFamily: "Open Sans, Helvetica",
+		fontFamily: "Open Sans",
 		width: "100%",
 	},
 	top: {
@@ -90,7 +90,7 @@ export default StyleSheet.create({
   aboutContainer: {
     display: "flex",
 		padding: "5%",
-		fontFamily: "Open Sans, Helvetica",
+		fontFamily: "Open Sans",
     width: "100%",
 	},
 	aboutBody: {
@@ -124,7 +124,7 @@ export default StyleSheet.create({
 	//HOME SCREEN
 	homeContainer: {
 		padding: "5%",
-		fontFamily: "Open Sans, Helvetica",
+		fontFamily: "Open Sans",
 	},
 
 	homeHead: {
@@ -168,7 +168,8 @@ export default StyleSheet.create({
 
 	levelRow: {
 		display: "flex", 
-    	flexFlow: "row nowrap",
+		flexDirection: "row",
+    	flexWrap: "nowrap",
     	alignItems: "flex-start",
     // justifyContent: "space-between",
 	},
@@ -254,12 +255,12 @@ export default StyleSheet.create({
 		paddingBottom: 20,
 		color: GREY,
 		fontWeight: "bold",
-		fontFamily: "Open Sans, Helvetica",
+		fontFamily: "Open Sans",
 	},
 
 	textSearch: {
 		paddingLeft: 5,
-		fontFamily: "Open Sans, Helvetica",
+		fontFamily: "Open Sans",
 		color: "black",
 		backgroundColor: WHITE,
 		height: 40,
@@ -285,7 +286,7 @@ export default StyleSheet.create({
     submitButtonText: {
 		color: WHITE,
 		fontWeight: "bold",
-		fontFamily: "Open Sans, Helvetica",
+		fontFamily: "Open Sans",
         alignSelf: "center",
         fontSize: 15,
     },
