@@ -21,14 +21,6 @@ const DIMENSION_WIDTH = Dimensions.get("window").width;
 const DIMENSION_HEIGHT = Dimensions.get("window").height;
 
 export default StyleSheet.create({
-
-	// nav: {
-	// 	alignItems: "center",
-	// 	fontFamily: "Proxima Nova",
-	// 	fontWeight: "bold",
-	// 	fontSize: 20,
-	// },
-
     // TAB NAVIGATION
     tabButton: {
 		paddingTop: 20,
@@ -42,11 +34,11 @@ export default StyleSheet.create({
 	container: {
 		display: "flex",
 		flexDirection: "column",
-        alignItems: 'center', 
         justifyContent: 'center',
 		resizeMode: "cover",
-		fontFamily: "Open Sans",
+		fontFamily: "OpenSans",
 		width: "100%",
+		flex: 1
 	},
 	top: {
 		paddingTop: 50,
@@ -87,11 +79,11 @@ export default StyleSheet.create({
     	width: 125,
     	marginTop: "5%",
 	},
-  aboutContainer: {
-    display: "flex",
+  	aboutContainer: {
+    	display: "flex",
 		padding: "5%",
-		fontFamily: "Open Sans",
-    width: "100%",
+		fontFamily: "OpenSans",
+    	width: "100%",
 	},
 	aboutBody: {
 		display: "flex",
@@ -100,9 +92,9 @@ export default StyleSheet.create({
 		paddingRight: "5%",
 		paddingLeft: "5%",
 		justifyContent: "center",
-    alignContent: "center",
-    alignItems: "center",
-    alignSelf: "center",
+    	alignContent: "center",
+    	alignItems: "center",
+    	alignSelf: "center",
 		backgroundColor: "white",
 		fontSize: 18,
 		width: "80%",
@@ -113,23 +105,25 @@ export default StyleSheet.create({
 		elevation: 2,
 		color: DARK_TEXT,
 	},
-  aboutTitle: {
-    paddingBottom: 25, 
+  	aboutTitle: {
+    	paddingBottom: 25, 
 		fontWeight: "bold",
 		fontSize: 36, 
 		color: DARK_TEXT,
-    alignSelf: "center",
-  },
+    	alignSelf: "center",
+  	},
 
 	//HOME SCREEN
 	homeContainer: {
 		padding: "5%",
-		fontFamily: "Open Sans",
+		fontFamily: "OpenSans",
+		flex: 1,
 	},
 
 	homeHead: {
 		display: "flex",
 		flexDirection: "column",
+		flex: 1
 	},
 
 	home: {
@@ -255,12 +249,12 @@ export default StyleSheet.create({
 		paddingBottom: 20,
 		color: GREY,
 		fontWeight: "bold",
-		fontFamily: "Open Sans",
+		fontFamily: "OpenSans",
 	},
 
 	textSearch: {
 		paddingLeft: 5,
-		fontFamily: "Open Sans",
+		fontFamily: "OpenSans",
 		color: "black",
 		backgroundColor: WHITE,
 		height: 40,
@@ -286,7 +280,7 @@ export default StyleSheet.create({
     submitButtonText: {
 		color: WHITE,
 		fontWeight: "bold",
-		fontFamily: "Open Sans",
+		fontFamily: "OpenSans",
         alignSelf: "center",
         fontSize: 15,
     },

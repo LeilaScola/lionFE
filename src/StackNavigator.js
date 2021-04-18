@@ -9,17 +9,16 @@ import EducationTypeScreen from './screens/EducationType';
 import SubjectTypeScreen from './screens/SubjectType';
 import TopicTypeScreen from './screens/TopicType';
 
-
-const AboutStack = createStackNavigator();
-function AboutStackScreen() {
-  return (
-    <AboutStack.Navigator>
-      <AboutStack.Screen name="About" component={AboutScreen} />
-      <AboutStack.Screen name="Home" component={HomeScreen} />
-      <AboutStack.Screen name="Help" component={HelpScreen} />
-    </AboutStack.Navigator>
-  );
-}
+// const AboutStack = createStackNavigator();
+// function AboutStackScreen() {
+//   return (
+//     <AboutStack.Navigator>
+//       <AboutStack.Screen name="About" component={AboutScreen} />
+//       <AboutStack.Screen name="Home" component={HomeScreen} />
+//       <AboutStack.Screen name="Help" component={HelpScreen} />
+//     </AboutStack.Navigator>
+//   );
+// }
 
 // const HelpStack = createStackNavigator();
 // function HelpStackScreen() {
@@ -35,7 +34,7 @@ function AboutStackScreen() {
 const HomeStack = createStackNavigator();
 function HomeStackScreen() {
   return (  
-    <HomeStack.Navigator>
+    <HomeStack.Navigator initialRouteName="Home">
       <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="About" component={AboutScreen} />
       <HomeStack.Screen name="Education" component={EducationTypeScreen} />
@@ -46,4 +45,4 @@ function HomeStackScreen() {
   );
 }
 
-export { AboutStackScreen, HomeStackScreen };
+export { HomeStackScreen };
