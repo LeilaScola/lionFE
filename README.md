@@ -1,1 +1,2 @@
 # MARTHA: An Offline Educational Tool for Cameroonian Refugees
+We believe education should be free and highly accessible. Since we have the means to provide to others, it is our duty as global citizens to push this mission forward. MARTHA is an affordable, sustainable, easy-to-use educational tool that can be utilized offline. This project was made possible by the Victoria Relief Foundation, an non-profit organization committed to assisting victims of the conflict in Southern Cameroons.
